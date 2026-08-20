@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vania Marwah | CS Engineering Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <h1>Vania Marwah</h1>
+        <p>CS Engineering Student</p>
+      </div>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h2>Hi, I'm Vania Marwah</h2>
+        <h3>Computer Science Engineering Student</h3>
+        <p>
+          I'm a CS Engineering student interested in Machine Learning,
+          automation, UI/UX design, and applied software systems. I enjoy
+          building technical prototypes and interactive applications
+          through academic and project-based work, with a growing focus
+          on practical problem solving and system design.
+        </p>
+        <a class="btn-primary" href="#">Download CV</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://placehold.co/320x320/cccccc/666666?text=Profile+Photo" alt="Vania Marwah profile photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- About, Skills, Education Section -->
+  <section id="about" class="info-section">
+    <div class="info-container">
+
+      <article class="card">
+        <h4><span class="icon" aria-hidden="true">👤</span>About Me</h4>
+        <p>Computer Science Engineering student with interests in Machine Learning, automation, UI/UX design, and applied software systems.</p>
+        <p>Experienced in building technical prototypes and interactive applications through academic and project-based work, with a growing focus on practical problem solving and system design.</p>
+      </article>
+
+      <article class="card" id="skills">
+        <h4><span class="icon" aria-hidden="true">&lt;/&gt;</span>Skills</h4>
+
+        <p class="skill-cat">Programming</p>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>C</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+          <li>HTML &amp; CSS</li>
+        </ul>
+
+        <p class="skill-cat">Machine Learning &amp; Data</p>
+        <ul class="skills-list">
+          <li>NumPy, pandas, matplotlib</li>
+          <li>Scikit-learn, Random Forest</li>
+          <li>Streamlit</li>
+        </ul>
+
+        <p class="skill-cat">Design &amp; CAD</p>
+        <ul class="skills-list">
+          <li>Figma, Canva</li>
+          <li>Autodesk Inventor, Fusion 360</li>
+        </ul>
+
+        <p class="skill-cat">Hardware &amp; Systems</p>
+        <ul class="skills-list">
+          <li>Arduino, LCD interfacing</li>
+          <li>Sensor integration &amp; automation workflows</li>
+        </ul>
+
+        <p class="skill-cat">Version Control &amp; Tools</p>
+        <ul class="skills-list">
+          <li>Git &amp; GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </article>
+
+      <article class="card" id="education">
+        <h4><span class="icon" aria-hidden="true">🎓</span>Education</h4>
+        <table class="edu-table">
+          <thead>
+            <tr>
+              <th scope="col">Qualification</th>
+              <th scope="col">Institute</th>
+              <th scope="col">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech CSE (1st Year)</td>
+              <td>GLA University, Greater Noida</td>
+              <td>2025 – 2029</td>
+            </tr>
+            <tr>
+              <td>Class 12</td>
+              <td>Vidya Bharati Chinmaya Vidyalaya</td>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <td>Class 10</td>
+              <td>Tarapore School</td>
+              <td>2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card" id="achievements">
+        <h4><span class="icon" aria-hidden="true">🏆</span>Achievements</h4>
+        <ul class="skills-list">
+          <li>1st Runner Up — Deviathon Internals, held by GLA University</li>
+          <li>Selected Contributor — Dx-EDGE MSME Digital Transformation Initiative</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Projects and Contact Section -->
+  <section id="projects" class="main-section">
+    <div class="main-container">
+
+      <div class="projects-connect">
+        <h4><span class="icon" aria-hidden="true">💼</span>Projects</h4>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <h5>1. Online Exam Proctoring System <span class="tag">ML</span></h5>
+            <p>AI-based proctoring tool using a Random Forest classifier to detect suspicious examination behavior, with a Streamlit interface for live monitoring.</p>
+            <a class="view-link" href="#">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h5>2. Safety Device Recognition App <span class="tag">CV</span></h5>
+            <p>YOLO-based computer vision model to identify industrial safety equipment in real time, including dataset annotation and preparation.</p>
+            <a class="view-link" href="#">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h5>3. Arduino Solar Power Monitor <span class="tag">Hardware</span></h5>
+            <p>Real-time monitoring system using Arduino to measure voltage, current, and power output from solar panels, with LCD-based diagnostic display.</p>
+            <a class="view-link" href="#">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h5>4. Mental Support Web Application <span class="tag tag-ongoing">Ongoing</span></h5>
+            <p>High-fidelity UI/UX prototype in Figma for mental wellness resources, with a responsive, accessible frontend build.</p>
+            <a class="view-link" href="#">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h5>5. Dermatological Diagnostic App</h5>
+            <p>Team-built skin-condition analysis platform; contributed frontend interface development using HTML and CSS.</p>
+            <a class="view-link" href="#">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h5>6. Load Shedding Time Management System <span class="tag tag-ongoing">Ongoing</span></h5>
+            <p>Automated scheduling system for structured power distribution, with software-defined timing logic for workflow automation.</p>
+            <a class="view-link" href="#">View Project</a>
+          </article>
+
+        </div>
+
+        <div class="connect">
+          <h4><span class="icon" aria-hidden="true">🔗</span>Connect with me</h4>
+          <div class="social-icons">
+            <a class="social-icon linkedin" href="#" aria-label="LinkedIn">in</a>
+            <a class="social-icon github" href="#" aria-label="GitHub">gh</a>
+            <a class="social-icon gmail" href="mailto:marwahvania04@gmail.com" aria-label="Gmail">@</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="contact">
+        <h4><span class="icon" aria-hidden="true">✉️</span>Contact Me</h4>
+        <p class="contact-info">
+          marwahvania04@gmail.com<br>
+          +91-6202258340
+        </p>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn-primary">Send Message</button>
+            <button type="reset" class="btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Vania Marwah. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
