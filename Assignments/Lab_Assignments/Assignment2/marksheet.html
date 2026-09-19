@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 650px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #999;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dde6f0;
+        }
+
+        .info-table th {
+            width: 30%;
+            text-align: left;
+        }
+
+        .info-table td {
+            text-align: left;
+        }
+
+        .result {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Marksheet</h1>
+
+        <table class="info-table">
+            <tr>
+                <th>Student Name</th>
+                <td>Riya Sharma</td>
+            </tr>
+            <tr>
+                <th>Roll Number</th>
+                <td>21CS045</td>
+            </tr>
+            <tr>
+                <th>Class / Semester</th>
+                <td>B.Tech CSE - Semester 3</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th>Subject</th>
+                <th>Total Marks</th>
+                <th>Marks Obtained</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mathematics</td>
+                <td>100</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Physics</td>
+                <td>100</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Data Structures</td>
+                <td>100</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>English</td>
+                <td>100</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Computer Networks</td>
+                <td>100</td>
+                <td>69</td>
+            </tr>
+            <tr>
+                <th colspan="2">Grand Total</th>
+                <th>500</th>
+                <th>385</th>
+            </tr>
+        </table>
+
+        <table class="info-table">
+            <tr>
+                <th>Percentage</th>
+                <td>77%</td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td class="result">PASS</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

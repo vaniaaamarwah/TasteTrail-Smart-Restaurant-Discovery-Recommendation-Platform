@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px 30px;
+            border: 1px solid #888;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        /* radio buttons and checkboxes labels should not be bold */
+        .option label {
+            font-weight: normal;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Student Registration</h1>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter a password">
+            </p>
+
+            <fieldset class="option">
+                <legend>Gender</legend>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <fieldset class="option">
+                <legend>Hobbies / Interests</legend>
+
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label><br>
+
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label><br>
+
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label><br>
+
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label>
+            </fieldset>
+
+            <p>
+                <label for="course">Course / Department:</label><br>
+                <select id="course" name="course">
+                    <option value="">-- Select a course --</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ece">Electronics</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="civil">Civil</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Register">
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>
