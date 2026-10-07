@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TasteTrail — Find your next local favourite</title>
+  <meta name="description" content="TasteTrail helps you discover restaurants and cafés worth exploring, wherever you are.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand">TasteTrail</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="explore.html">Explore</a>
+        <a href="local-finds.html">Local Finds</a>
+        <a href="favorites.html">Favorites</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="explore.html" class="icon-btn" aria-label="Search restaurants">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </a>
+        <a href="compare.html" class="icon-btn" aria-label="Compare restaurants">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4v16M16 4v16M4 9h4M4 15h4M16 9h4M16 15h4"/></svg>
+          <span class="compare-badge">0</span>
+        </a>
+        <a href="profile.html" class="icon-btn" aria-label="Your profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.4-3.6 4.4-5.6 7.5-5.6s6.1 2 7.5 5.6"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow">Local Finds</span>
+          <h1>Find your next local favourite.</h1>
+          <p class="hero-sub">Discover restaurants, cafés and hidden corners worth exploring.</p>
+          <form class="hero-search" id="hero-search-form">
+            <div class="location-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <label for="hero-location" class="visually-hidden">Your location</label>
+              <input type="text" id="hero-location" value="Greater Noida" placeholder="Enter a location">
+            </div>
+            <button type="submit" class="btn btn-primary">Explore nearby restaurants
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEARBY MAP ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Nearby around you</h2>
+            <p class="section-sub">Discover places worth exploring around your current location.</p>
+          </div>
+          <a href="explore.html" class="view-link">Open full map
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg>
+          </a>
+        </div>
+        <div class="map-home-wrap">
+          <div class="map-panel" id="home-map"></div>
+          <div class="map-preview-card" id="map-preview"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCAL FINDS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Local Finds</h2>
+            <p class="section-sub">Places worth discovering.</p>
+          </div>
+          <a href="local-finds.html" class="view-link">See all
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg>
+          </a>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ MOOD PICKER ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>What are you in the mood for?</h2>
+            <p class="section-sub">A quick, on-page suggestion based on what you're after — not an AI recommendation engine, just a simple filter.</p>
+          </div>
+        </div>
+        <div class="mood-row" id="mood-row">
+          <button class="mood-chip" data-mood="Quiet Corner">Quiet Corner</button>
+          <button class="mood-chip" data-mood="Date Night">Date Night</button>
+          <button class="mood-chip" data-mood="Quick Bite">Quick Bite</button>
+          <button class="mood-chip" data-mood="Family Dinner">Family Dinner</button>
+          <button class="mood-chip" data-mood="Coffee & Conversation">Coffee &amp; Conversation</button>
+        </div>
+        <div class="card-grid" id="mood-results" style="margin-top: var(--sp-6);"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED RESTAURANTS ============ -->
+    <section class="section" style="border-bottom: none;">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Trending and recommended</h2>
+            <p class="section-sub">Highly rated places our guide keeps coming back to.</p>
+          </div>
+        </div>
+        <div class="card-grid" id="featured-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>TasteTrail — a B.Tech CSE academic project.</p>
+      <p>Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MOBILE BOTTOM NAV ============ -->
+  <nav class="bottom-nav" aria-label="Mobile">
+    <a href="explore.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Explore
+    </a>
+    <a href="local-finds.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C10 4 4 10 4 20c10 0 16-6 16-16Z"/><path d="M9 15c3-3 5-5 9-9"/></svg>
+      Local Finds
+    </a>
+    <a href="favorites.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4.4-8.8 10.4-8.8 10.4S3.2 13 3.2 8.6C3.2 5.6 5.6 3.2 8.6 3.2c1.6 0 3 .7 3.4 1.9.4-1.2 1.8-1.9 3.4-1.9 3 0 5.4 2.4 5.4 5.4Z"/></svg>
+      Favorites
+    </a>
+    <a href="profile.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.4-3.6 4.4-5.6 7.5-5.6s6.1 2 7.5 5.6"/></svg>
+      Profile
+    </a>
+  </nav>
+
+  <script src="js/restaurants.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
